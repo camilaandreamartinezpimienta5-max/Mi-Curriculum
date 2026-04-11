@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Camila Andrea Martínez</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Diseño General Rosa Profesional */
+        body {
+            background-color: #fff0f3;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .cv-container {
+            background: white;
+            max-width: 850px;
+            width: 100%;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(255, 143, 171, 0.2);
+            border-left: 12px solid #ff8fab;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #ffccd5;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #c9184a;
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: -1px;
+        }
+
+        .sub-titulo {
+            color: #ff4d6d;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-top: 5px;
+        }
+
+        .contact-info {
+            margin-top: 15px;
+        }
+
+        .contact-link {
+            color: #ff758f;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .contact-link:hover {
+            color: #c9184a;
+        }
+
+        /* Secciones */
+        section {
+            margin-top: 35px;
+        }
+
+        h2 {
+            color: #c9184a;
+            font-size: 1.4rem;
+            border-bottom: 2px solid #ffdae0;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2 i {
+            margin-right: 10px;
+            color: #ff8fab;
+        }
+
+        .edu-item, .exp-item {
+            margin-bottom: 20px;
+        }
+
+        .date {
+            color: #ff4d6d;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        /* Cuadrícula de Habilidades */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .skill-tag {
+            background: #fff0f3;
+            color: #c9184a;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: 1px solid #ffccd5;
+        }
+
+        p {
+            line-height: 1.7;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        <header>
+            <h1>Camila Andrea Martínez</h1>
+            <p class="sub-titulo">Estudiante de Ingeniería de Sistemas</p>
+            <div class="contact-info">
+                <a href="mailto:tu-correo@ejemplo.com" class="contact-link"><i class="fas fa-envelope"></i> Correo</a>
+                <a href="https://www.instagram.com/tu_usuario" class="contact-link"><i class="fab fa-instagram"></i> Instagram</a>
+                <span class="contact-link"><i class="fas fa-map-marker-alt"></i> Ocaña, Colombia</span>
+            </div>
+        </header>
+
+        <section>
+            <h2><i class="fas fa-user"></i> Perfil Profesional</h2>
+            <p>
+                Soy una estudiante de Ingeniería de Sistemas con formación técnica previa, lo que me ha permitido desarrollar una base sólida en el mantenimiento de equipos y lógica de programación. Me caracterizo por mi capacidad de aprendizaje autónomo y mi interés en el desarrollo de soluciones digitales que impacten positivamente en el entorno empresarial y educativo.
+            </p>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-graduation-cap"></i> Educación</h2>
+            
+            <div class="edu-item">
+                <span class="date">2025 - Actualidad</span>
+                <p><strong>Ingeniería de Sistemas (2do Semestre)</strong><br>Universidad Francisco de Paula Santander Seccional Ocaña</p>
+            </div>
+
+            <div class="edu-item">
+                <span class="date">Graduada</span>
+                <p><strong>Técnico en Sistemas</strong><br>Institución Educativa Nuestra Señora del Carmen</p>
+            </div>
+
+            <div class="edu-item">
+                <p><strong>Bachiller Académico</strong><br>Institución Educativa Nuestra Señora del Carmen</p>
+            </div>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-code"></i> Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">HTML5 / CSS3</span>
+                <span class="skill-tag">Git & GitHub</span>
+                <span class="skill-tag">Java & NetBeans</span>
+                <span class="skill-tag">Mantenimiento de PC</span>
+                <span class="skill-tag">Canva (Diseño Digital)</span>
+                <span class="skill-tag">Lógica de Programación</span>
+            </div>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-briefcase"></i> Proyectos Personales</h2>
+            <div class="exp-item">
+                <p><strong>Desarrollo Web</strong>: Creación de perfiles profesionales y portafolios utilizando tecnologías web modernas y despliegue en la nube.</p>
+                <p><strong>Emprendimiento Digital</strong>: Diseño de catálogos profesionales en Canva y gestión de negocios a través de plataformas digitales.</p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
