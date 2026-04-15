@@ -3,180 +3,538 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Camila Andrea Martínez</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <style>
-        /* Diseño General Rosa Profesional */
-        body {
-            background-color: #fff0f3;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 40px 20px;
-            display: flex;
-            justify-content: center;
-        }
+    <title>CV – Camila Andrea Martínez Pimienta</title>
+    <meta name="description" content="Currículum Vitae de Camila Andrea Martínez Pimienta, estudiante de Ingeniería de Sistemas en la UFPS Ocaña.">
+    <meta name="author" content="Camila Andrea Martínez Pimienta">
 
-        .cv-container {
-            background: white;
-            max-width: 850px;
-            width: 100%;
-            padding: 50px;
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(255, 143, 171, 0.2);
-            border-left: 12px solid #ff8fab;
-        }
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
-        header {
-            text-align: center;
-            border-bottom: 2px solid #ffccd5;
-            padding-bottom: 30px;
-            margin-bottom: 30px;
-        }
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-        h1 {
-            color: #c9184a;
-            margin: 0;
-            font-size: 2.2rem;
-            letter-spacing: -1px;
-        }
-
-        .sub-titulo {
-            color: #ff4d6d;
-            font-weight: bold;
-            font-size: 1.3rem;
-            margin-top: 5px;
-        }
-
-        .contact-info {
-            margin-top: 15px;
-        }
-
-        .contact-link {
-            color: #ff758f;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .contact-link:hover {
-            color: #c9184a;
-        }
-
-        /* Secciones */
-        section {
-            margin-top: 35px;
-        }
-
-        h2 {
-            color: #c9184a;
-            font-size: 1.4rem;
-            border-bottom: 2px solid #ffdae0;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-        }
-
-        h2 i {
-            margin-right: 10px;
-            color: #ff8fab;
-        }
-
-        .edu-item, .exp-item {
-            margin-bottom: 20px;
-        }
-
-        .date {
-            color: #ff4d6d;
-            font-weight: bold;
-            font-size: 0.9rem;
-        }
-
-        /* Cuadrícula de Habilidades */
-        .skills-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 10px;
-        }
-
-        .skill-tag {
-            background: #fff0f3;
-            color: #c9184a;
-            padding: 8px 18px;
-            border-radius: 25px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            border: 1px solid #ffccd5;
-        }
-
-        p {
-            line-height: 1.7;
-            color: #555;
-        }
-    </style>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    <!-- Botón flotante Imprimir / Descargar PDF -->
+    <button class="btn-print" id="btn-imprimir" onclick="window.print()" title="Descargar / Imprimir PDF">
+        <i class="fas fa-download"></i>
+        <span>Descargar PDF</span>
+    </button>
+
     <div class="cv-container">
+
+        <!-- ══════════════════════════════
+             ENCABEZADO
+        ══════════════════════════════ -->
         <header>
-            <h1>Camila Andrea Martínez</h1>
-            <p class="sub-titulo">Estudiante de Ingeniería de Sistemas</p>
-            <div class="contact-info">
-                <a href="mailto:camilaandreamartinezpimienta5@gmail.com" class="contact-link"><i class="fas fa-envelope"></i> Correo</a>
-                <a href="https://www.instagram.com/ca.miandrea26" class="contact-link"><i class="fab fa-instagram"></i> Instagram</a>
-                <span class="contact-link"><i class="fas fa-map-marker-alt"></i> Ocaña, Colombia</span>
+            <div class="header-inner">
+
+                <!-- Avatar -->
+                <div class="avatar" aria-label="Iniciales de Camila Andrea">CA</div>
+
+                <div class="header-text">
+                    <h1>Camila Andrea Martínez</h1>
+                    <p class="sub-titulo">
+                        <i class="fas fa-laptop-code"></i>
+                        Estudiante de Ingeniería de Sistemas &nbsp;·&nbsp; UFPS Ocaña
+                    </p>
+
+                    <!-- Contacto -->
+                    <nav class="contact-info" aria-label="Datos de contacto">
+                        <a href="mailto:camilaandreamartinezpimienta5@gmail.com" class="contact-pill" id="link-correo">
+                            <i class="fas fa-envelope"></i> camilaandreamartinezpimienta5@gmail.com
+                        </a>
+                        <a href="https://www.instagram.com/ca.miandrea26" target="_blank" rel="noopener" class="contact-pill" id="link-instagram">
+                            <i class="fab fa-instagram"></i> @ca.miandrea26
+                        </a>
+                        <a href="https://github.com/camilaandreamartinezpimienta5-max" target="_blank" rel="noopener" class="contact-pill" id="link-github">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="tel:+573000000000" class="contact-pill" id="link-telefono">
+                            <i class="fas fa-phone"></i> +57 300 000 0000
+                        </a>
+                        <a href="https://linkedin.com/in/camila-martinez" target="_blank" rel="noopener" class="contact-pill" id="link-linkedin">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <span class="contact-pill" id="info-ubicacion">
+                            <i class="fas fa-location-dot"></i> Ocaña, Norte de Santander
+                        </span>
+                    </nav>
+
+                    <!-- Disponibilidad -->
+                    <div class="disponible-badge" id="badge-disponible">
+                        <span class="dot-verde"></span> Disponible para prácticas y proyectos
+                    </div>
+                </div>
+
             </div>
         </header>
 
-        <section>
-            <h2><i class="fas fa-user"></i> Perfil Profesional</h2>
-            <p>
-                Soy una estudiante de Ingeniería de Sistemas con formación técnica previa, lo que me ha permitido desarrollar una base sólida en el mantenimiento de equipos y lógica de programación. Me caracterizo por mi capacidad de aprendizaje autónomo y mi interés en el desarrollo de soluciones digitales que impacten positivamente en el entorno empresarial y educativo.
-            </p>
-        </section>
+        <!-- ══════════════════════════════
+             CUERPO PRINCIPAL
+        ══════════════════════════════ -->
+        <main class="cv-body">
 
-        <section>
-            <h2><i class="fas fa-graduation-cap"></i> Educación</h2>
-            
-            <div class="edu-item">
-                <span class="date">2025 - Actualidad</span>
-                <p><strong>Ingeniería de Sistemas (2do Semestre)</strong><br>Universidad Francisco de Paula Santander Seccional Ocaña</p>
-            </div>
+            <!-- ── Perfil Profesional ── -->
+            <section id="sec-perfil" class="fade-in" aria-labelledby="titulo-perfil">
+                <h2 id="titulo-perfil">
+                    <span class="section-icon"><i class="fas fa-user"></i></span>
+                    Sobre mí
+                </h2>
+                <p class="perfil-texto">
+                    Estudiante de <strong>Ingeniería de Sistemas</strong> con formación técnica previa, lo que me ha
+                    permitido desarrollar una base sólida en mantenimiento de equipos y lógica de programación.
+                    Me caracterizo por mi <strong>capacidad de aprendizaje autónomo</strong>, mi pensamiento analítico
+                    y mi interés en el desarrollo de soluciones digitales que impacten positivamente en el entorno
+                    empresarial y educativo. Proactiva, organizada y apasionada por la tecnología y el diseño.
+                </p>
 
-            <div class="edu-item">
-                <span class="date">Graduada</span>
-                <p><strong>Técnico en Sistemas</strong><br>Institución Educativa Nuestra Señora del Carmen</p>
-            </div>
+                <!-- Tarjetas de datos rápidos -->
+                <div class="quick-stats">
+                    <div class="stat-card" id="stat-semestre">
+                        <i class="fas fa-book-open"></i>
+                        <strong>2.° Semestre</strong>
+                        <small>Ing. Sistemas</small>
+                    </div>
+                    <div class="stat-card" id="stat-proyectos">
+                        <i class="fas fa-code-branch"></i>
+                        <strong>2+</strong>
+                        <small>Proyectos</small>
+                    </div>
+                    <div class="stat-card" id="stat-idiomas">
+                        <i class="fas fa-language"></i>
+                        <strong>2</strong>
+                        <small>Idiomas</small>
+                    </div>
+                    <div class="stat-card" id="stat-ciudad">
+                        <i class="fas fa-map-pin"></i>
+                        <strong>Ocaña</strong>
+                        <small>Colombia</small>
+                    </div>
+                </div>
+            </section>
 
-            <div class="edu-item">
-                <p><strong>Bachiller Académico</strong><br>Institución Educativa Nuestra Señora del Carmen</p>
-            </div>
-        </section>
+            <!-- ── Objetivo Profesional ── -->
+            <section id="sec-objetivo" class="fade-in" aria-labelledby="titulo-objetivo">
+                <h2 id="titulo-objetivo">
+                    <span class="section-icon"><i class="fas fa-bullseye"></i></span>
+                    Objetivo Profesional
+                </h2>
+                <div class="objetivo-card">
+                    <div class="objetivo-meta">
+                        <span class="objetivo-tag"><i class="fas fa-hourglass-half"></i> Corto plazo</span>
+                        <span class="objetivo-tag"><i class="fas fa-chart-line"></i> Mediano plazo</span>
+                    </div>
+                    <p class="objetivo-texto">
+                        Consolidar mis conocimientos en <strong>Ingeniería de Sistemas</strong> participando en
+                        proyectos de desarrollo de software que me permitan aplicar mis habilidades en entornos
+                        reales. A mediano plazo, especializarme en <strong>desarrollo web</strong> e
+                        <strong>inteligencia artificial</strong>, aportando soluciones digitales innovadoras
+                        que impacten positivamente en el sector educativo y empresarial de la región.
+                    </p>
+                </div>
+            </section>
 
-        <section>
-            <h2><i class="fas fa-code"></i> Habilidades Técnicas</h2>
-            <div class="skills-grid">
-                <span class="skill-tag">HTML5 / CSS3</span>
-                <span class="skill-tag">Git & GitHub</span>
-                <span class="skill-tag">Java & NetBeans</span>
-                <span class="skill-tag">Mantenimiento de PC</span>
-                <span class="skill-tag">Canva (Diseño Digital)</span>
-                <span class="skill-tag">Lógica de Programación</span>
-            </div>
-        </section>
+            <!-- ── Educación ── -->
+            <section id="sec-educacion" class="fade-in" aria-labelledby="titulo-educacion">
+                <h2 id="titulo-educacion">
+                    <span class="section-icon"><i class="fas fa-graduation-cap"></i></span>
+                    Educación
+                </h2>
+                <div class="timeline">
 
-        <section>
-            <h2><i class="fas fa-briefcase"></i> Proyectos Personales</h2>
-            <div class="exp-item">
-                <p><strong>Desarrollo Web</strong>: Creación de perfiles profesionales y portafolios utilizando tecnologías web modernas y despliegue en la nube.</p>
-                <p><strong>Emprendimiento Digital</strong>: Diseño de catálogos profesionales en Canva y gestión de negocios a través de plataformas digitales.</p>
-            </div>
-        </section>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-line"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-badge activo">2025 – Actualidad</span>
+                            <p class="timeline-title">Ingeniería de Sistemas – 2.° Semestre</p>
+                            <p class="timeline-sub"><i class="fas fa-university"></i> Universidad Francisco de Paula Santander Seccional Ocaña</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-line"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-badge">Graduada</span>
+                            <p class="timeline-title">Técnico en Sistemas</p>
+                            <p class="timeline-sub"><i class="fas fa-school"></i> Institución Educativa Nuestra Señora del Carmen</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-badge">Graduada</span>
+                            <p class="timeline-title">Bachiller Académico</p>
+                            <p class="timeline-sub"><i class="fas fa-school"></i> Institución Educativa Nuestra Señora del Carmen</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ── Experiencia ── -->
+            <section id="sec-experiencia" class="fade-in" aria-labelledby="titulo-experiencia">
+                <h2 id="titulo-experiencia">
+                    <span class="section-icon"><i class="fas fa-briefcase"></i></span>
+                    Experiencia
+                </h2>
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-line"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-badge activo">2024 – Actualidad</span>
+                            <p class="timeline-title">Emprendedora Digital – Diseño &amp; Catálogos</p>
+                            <p class="timeline-sub"><i class="fas fa-store"></i> Trabajo independiente</p>
+                            <p class="timeline-desc">Diseño de piezas gráficas, catálogos y estrategia de contenido en redes sociales para emprendimientos locales. Gestión de marca y atención al cliente en plataformas digitales.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-badge">2023</span>
+                            <p class="timeline-title">Soporte Técnico &amp; Mantenimiento de Equipos</p>
+                            <p class="timeline-sub"><i class="fas fa-laptop"></i> Inst. Educativa Nuestra Señora del Carmen</p>
+                            <p class="timeline-desc">Diagnóstico, ensamble y mantenimiento preventivo y correctivo de computadores durante la formación técnica. Apoyo a docentes y compañeros en gestión de equipos.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ── Habilidades Técnicas ── -->
+            <section id="sec-habilidades" class="fade-in" aria-labelledby="titulo-habilidades">
+                <h2 id="titulo-habilidades">
+                    <span class="section-icon"><i class="fas fa-code"></i></span>
+                    Habilidades Técnicas
+                </h2>
+                <div class="skills-grid">
+                    <span class="skill-tag"><i class="fab fa-html5"></i> HTML5 / CSS3</span>
+                    <span class="skill-tag"><i class="fab fa-git-alt"></i> Git &amp; GitHub</span>
+                    <span class="skill-tag"><i class="fab fa-java"></i> Java &amp; NetBeans</span>
+                    <span class="skill-tag"><i class="fas fa-screwdriver-wrench"></i> Mantenimiento de PC</span>
+                    <span class="skill-tag"><i class="fas fa-palette"></i> Canva – Diseño Digital</span>
+                    <span class="skill-tag"><i class="fas fa-brain"></i> Lógica de Programación</span>
+                    <span class="skill-tag"><i class="fas fa-cloud"></i> Despliegue en la Nube</span>
+                    <span class="skill-tag"><i class="fas fa-database"></i> Bases de Datos</span>
+                    <span class="skill-tag"><i class="fas fa-terminal"></i> Línea de Comandos</span>
+                </div>
+            </section>
+
+            <!-- ── Habilidades Blandas ── -->
+            <section id="sec-blandas" class="fade-in" aria-labelledby="titulo-blandas">
+                <h2 id="titulo-blandas">
+                    <span class="section-icon"><i class="fas fa-heart-pulse"></i></span>
+                    Habilidades Blandas
+                </h2>
+                <div class="soft-skills-grid">
+                    <div class="soft-skill-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Pensamiento Analítico</span>
+                    </div>
+                    <div class="soft-skill-item">
+                        <i class="fas fa-comments"></i>
+                        <span>Comunicación Asertiva</span>
+                    </div>
+                    <div class="soft-skill-item">
+                        <i class="fas fa-people-group"></i>
+                        <span>Trabajo en Equipo</span>
+                    </div>
+                    <div class="soft-skill-item">
+                        <i class="fas fa-rotate"></i>
+                        <span>Adaptabilidad</span>
+                    </div>
+                    <div class="soft-skill-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Gestión del Tiempo</span>
+                    </div>
+                    <div class="soft-skill-item">
+                        <i class="fas fa-magnifying-glass"></i>
+                        <span>Resolución de Problemas</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── Idiomas ── -->
+            <section id="sec-idiomas" class="fade-in" aria-labelledby="titulo-idiomas">
+                <h2 id="titulo-idiomas">
+                    <span class="section-icon"><i class="fas fa-language"></i></span>
+                    Idiomas
+                </h2>
+                <div class="idiomas-list">
+
+                    <div class="idioma-item" id="idioma-espanol">
+                        <div class="idioma-header">
+                            <span class="idioma-nombre">🇨🇴 Español</span>
+                            <span class="idioma-nivel">Nativo</span>
+                        </div>
+                        <div class="barra-contenedor" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <div class="barra-relleno" data-width="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="idioma-item" id="idioma-ingles">
+                        <div class="idioma-header">
+                            <span class="idioma-nombre">🇺🇸 Inglés</span>
+                            <span class="idioma-nivel">Básico – A2</span>
+                        </div>
+                        <div class="barra-contenedor" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                            <div class="barra-relleno" data-width="30"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ── Cursos y Certificados ── -->
+            <section id="sec-cursos" class="fade-in" aria-labelledby="titulo-cursos">
+                <h2 id="titulo-cursos">
+                    <span class="section-icon"><i class="fas fa-certificate"></i></span>
+                    Cursos &amp; Certificados
+                </h2>
+                <div class="cursos-grid">
+
+                    <div class="curso-card" id="curso-git">
+                        <div class="curso-header">
+                            <i class="fab fa-git-alt curso-ico"></i>
+                            <div>
+                                <p class="curso-titulo">Control de Versiones con Git &amp; GitHub</p>
+                                <p class="curso-entidad">Formación universitaria – UFPS Ocaña</p>
+                            </div>
+                        </div>
+                        <span class="curso-badge">2025</span>
+                    </div>
+
+                    <div class="curso-card" id="curso-java">
+                        <div class="curso-header">
+                            <i class="fab fa-java curso-ico"></i>
+                            <div>
+                                <p class="curso-titulo">Programación Orientada a Objetos – Java</p>
+                                <p class="curso-entidad">Formación universitaria – UFPS Ocaña</p>
+                            </div>
+                        </div>
+                        <span class="curso-badge">2025</span>
+                    </div>
+
+                    <div class="curso-card" id="curso-mantenimiento">
+                        <div class="curso-header">
+                            <i class="fas fa-microchip curso-ico"></i>
+                            <div>
+                                <p class="curso-titulo">Mantenimiento y Ensamble de Computadores</p>
+                                <p class="curso-entidad">Inst. Educativa Nuestra Señora del Carmen</p>
+                            </div>
+                        </div>
+                        <span class="curso-badge">Técnico</span>
+                    </div>
+
+                    <div class="curso-card" id="curso-canva">
+                        <div class="curso-header">
+                            <i class="fas fa-pen-ruler curso-ico"></i>
+                            <div>
+                                <p class="curso-titulo">Diseño Digital con Canva</p>
+                                <p class="curso-entidad">Autodidacta</p>
+                            </div>
+                        </div>
+                        <span class="curso-badge">2024</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ── Logros & Reconocimientos ── -->
+            <section id="sec-logros" class="fade-in" aria-labelledby="titulo-logros">
+                <h2 id="titulo-logros">
+                    <span class="section-icon"><i class="fas fa-trophy"></i></span>
+                    Logros &amp; Reconocimientos
+                </h2>
+                <div class="logros-grid">
+
+                    <div class="logro-card" id="logro-titulo">
+                        <div class="logro-icon-wrap"><i class="fas fa-medal"></i></div>
+                        <div class="logro-info">
+                            <p class="logro-titulo">Título Técnico con Distinción</p>
+                            <p class="logro-desc">Graduada como Técnica en Sistemas con reconocimiento académico en la Inst. Educativa Nuestra Señora del Carmen.</p>
+                            <span class="logro-date">2024</span>
+                        </div>
+                    </div>
+
+                    <div class="logro-card" id="logro-cv">
+                        <div class="logro-icon-wrap"><i class="fas fa-globe"></i></div>
+                        <div class="logro-info">
+                            <p class="logro-titulo">CV Web Publicado en GitHub Pages</p>
+                            <p class="logro-desc">Desarrollo y despliegue de currículum web responsivo con HTML5, CSS3 y GitHub Pages desde el primer semestre universitario.</p>
+                            <span class="logro-date">2025</span>
+                        </div>
+                    </div>
+
+                    <div class="logro-card" id="logro-autodidacta">
+                        <div class="logro-icon-wrap"><i class="fas fa-lightbulb"></i></div>
+                        <div class="logro-info">
+                            <p class="logro-titulo">Aprendizaje Autodidacta en Diseño Digital</p>
+                            <p class="logro-desc">Dominio autónomo de herramientas de diseño y marketing digital, aplicadas exitosamente en proyectos reales de emprendimiento local.</p>
+                            <span class="logro-date">2023 – 2025</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ── Proyectos Personales ── -->
+            <section id="sec-proyectos" class="fade-in" aria-labelledby="titulo-proyectos">
+                <h2 id="titulo-proyectos">
+                    <span class="section-icon"><i class="fas fa-rocket"></i></span>
+                    Proyectos Personales
+                </h2>
+                <div class="projects-grid">
+
+                    <article class="project-card" id="proyecto-cv">
+                        <div class="project-icon">💻</div>
+                        <p class="project-title">Currículum Vitae Web</p>
+                        <p class="project-desc">
+                            Diseño y desarrollo de este currículum como sitio web responsivo con
+                            HTML5, CSS3 y animaciones nativas. Desplegado en GitHub Pages.
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML5</span><span>CSS3</span><span>GitHub Pages</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" id="proyecto-web">
+                        <div class="project-icon">🌐</div>
+                        <p class="project-title">Portafolios &amp; Perfiles</p>
+                        <p class="project-desc">
+                            Creación de perfiles profesionales y portafolios web con tecnologías
+                            modernas y despliegue en plataformas cloud.
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML5</span><span>CSS3</span><span>Cloud</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" id="proyecto-emprendimiento">
+                        <div class="project-icon">🛍️</div>
+                        <p class="project-title">Emprendimiento Digital</p>
+                        <p class="project-desc">
+                            Diseño de catálogos y branding profesional en Canva. Gestión y
+                            marketing a través de redes sociales y plataformas digitales.
+                        </p>
+                        <div class="project-tags">
+                            <span>Canva</span><span>Redes Sociales</span><span>Branding</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" id="proyecto-java">
+                        <div class="project-icon">☕</div>
+                        <p class="project-title">Aplicación de Escritorio – Java</p>
+                        <p class="project-desc">
+                            Desarrollo de aplicaciones de escritorio con interfaz gráfica usando
+                            NetBeans y principios de Programación Orientada a Objetos.
+                        </p>
+                        <div class="project-tags">
+                            <span>Java</span><span>NetBeans</span><span>POO</span>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- ── Intereses ── -->
+            <section id="sec-intereses" class="fade-in" aria-labelledby="titulo-intereses">
+                <h2 id="titulo-intereses">
+                    <span class="section-icon"><i class="fas fa-star"></i></span>
+                    Intereses
+                </h2>
+                <div class="intereses-grid">
+                    <div class="interes-item"><i class="fas fa-mobile-screen"></i><span>Desarrollo Web &amp; Apps</span></div>
+                    <div class="interes-item"><i class="fas fa-robot"></i><span>Inteligencia Artificial</span></div>
+                    <div class="interes-item"><i class="fas fa-shield-halved"></i><span>Ciberseguridad</span></div>
+                    <div class="interes-item"><i class="fas fa-pen-fancy"></i><span>Diseño UX/UI</span></div>
+                    <div class="interes-item"><i class="fas fa-book"></i><span>Lectura</span></div>
+                    <div class="interes-item"><i class="fas fa-music"></i><span>Música</span></div>
+                </div>
+            </section>
+
+            <!-- ── Referencias ── -->
+            <section id="sec-referencias" class="fade-in" aria-labelledby="titulo-referencias">
+                <h2 id="titulo-referencias">
+                    <span class="section-icon"><i class="fas fa-address-card"></i></span>
+                    Referencias
+                </h2>
+                <div class="referencias-card">
+                    <div class="referencias-icon-wrap">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="referencias-text">
+                        <p class="referencias-titulo">Referencias disponibles bajo petición</p>
+                        <p class="referencias-desc">
+                            Cuento con referencias académicas y personales de docentes y profesionales
+                            que avalan mi desempeño, compromiso y habilidades técnicas y blandas.
+                            Contáctame directamente para solicitarlas.
+                        </p>
+                        <a href="mailto:camilaandreamartinezpimienta5@gmail.com" class="referencias-btn" id="btn-referencias">
+                            <i class="fas fa-envelope"></i> Solicitar referencias
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- PIE DE PÁGINA -->
+        <footer class="cv-footer">
+            <p>Camila Andrea Martínez Pimienta &nbsp;·&nbsp; Ocaña, Colombia &nbsp;·&nbsp; 2025</p>
+            <p class="footer-sub">Hecho con <i class="fas fa-heart" style="color:#ff4d6d"></i> con HTML5 &amp; CSS3</p>
+        </footer>
+
     </div>
 
+    <!-- ── Scripts ── -->
+    <script>
+        // Animación de aparición al hacer scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Animación de barras de idioma
+        const barObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.querySelectorAll('.barra-relleno').forEach(bar => {
+                        bar.style.width = bar.dataset.width + '%';
+                    });
+                    barObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        document.querySelectorAll('#sec-idiomas').forEach(el => barObserver.observe(el));
+    </script>
 </body>
 </html>
